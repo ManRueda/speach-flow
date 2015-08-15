@@ -1,0 +1,29 @@
+{
+  "name": "speach-flow",
+  "version": "0.0.1",
+  "authors": [
+    "Manuel Rueda <manuel.rueda.un@gmail.com>"
+  ],
+  "description": "Speach driven event trigger",
+  "main": "dist/speach-flow.min.js",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "speach",
+    "event",
+    "trigger"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "phenomenon-js": "~0.1.2"
+  }
+}
