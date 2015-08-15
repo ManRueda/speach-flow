@@ -14,7 +14,7 @@
 }(this, function () {
   function SpeachFlow(opts){
     var that = this;
-    var SpeechRecognition = window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+    var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition || null;
     if (SpeechRecognition === null){
       throw 'Web Speach API not supported';
     }
