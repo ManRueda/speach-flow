@@ -1,17 +1,17 @@
 {
-  "name": "speach-flow",
+  "name": "speech-flow",
   "version": "0.0.1",
   "authors": [
     "Manuel Rueda <manuel.rueda.un@gmail.com>"
   ],
-  "description": "Speach driven event trigger",
-  "main": "dist/speach-flow.min.js",
+  "description": "Speech driven event trigger",
+  "main": "dist/speech-flow.min.js",
   "moduleType": [
     "amd",
     "globals"
   ],
   "keywords": [
-    "speach",
+    "speech",
     "event",
     "trigger"
   ],

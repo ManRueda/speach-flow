@@ -9,10 +9,10 @@
     module.exports = factory();
   } else {
     // Browser globals
-    root.SpeachFlow = factory();
+    root.SpeechFlow = factory();
   }
 }(this, function () {
-  function SpeachFlow(opts){
+  function SpeechFlow(opts){
     var that = this;
     var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition || null;
     if (SpeechRecognition === null){
@@ -49,10 +49,10 @@
 
 
     this.bootstrap = function(opts){
-      var elements = document.querySelectorAll('[speach-flow]');
+      var elements = document.querySelectorAll('[speech-flow]');
       for (var i = 0; i < elements.length; i++){
         var elem = elements[i];
-        var value = elem.attributes["speach-flow"].value;
+        var value = elem.attributes["speech-flow"].value;
 
         this.on(value.split(':')[0], function(){
           window[value.split(':')[1]].call(elem);
@@ -160,7 +160,7 @@
 
     }
   }
-  SpeachFlow.prototype = new phenomenonJS();
-  return SpeachFlow;
+  SpeechFlow.prototype = new phenomenonJS();
+  return SpeechFlow;
 
 }));

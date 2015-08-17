@@ -6,11 +6,11 @@ html
     meta(charset="utf-8")
   body
     button#start Start listening
-    button#btn1(speach-flow="hola:myFunction") Button 1
+    button#btn1(speech-flow="hola:myFunction") Button 1
     script(type="application/javascript", src="../bower_components/phenomenon-js/dist/phenomenonJS.min.js")
-    script(type="application/javascript", src="../src/speach-flow.js")
+    script(type="application/javascript", src="../src/speech-flow.js")
     script(type="application/javascript").
-      speak = new SpeachFlow({
+      speak = new SpeechFlow({
         lang: "es-AR",
         ignoreCase: true,
         ignoreDiacritics: true
