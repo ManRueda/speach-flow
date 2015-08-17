@@ -36,7 +36,6 @@
             text = removeDiacritics(text);
           }
           that.emit(text);
-          console.debug(text);
         }
       }
     };
@@ -46,6 +45,21 @@
     };
     this.stop = function(){
       recorder.stop();
+    };
+
+
+    this.bootstrap = function(opts){
+      var elements = document.querySelectorAll('[speach-flow]');
+      for (var i = 0; i < elements.length; i++){
+        var elem = elements[i];
+        var value = elem.attributes["speach-flow"].value;
+
+        this.on(value.split(':')[0], function(){
+          window[value.split(':')[1]].call(elem);
+        });
+      }
+      if (opts.autoStart)
+        this.start();
     };
 
 
