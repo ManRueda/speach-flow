@@ -1,0 +1,27 @@
+{
+  "name": "speach-flow",
+  "version": "0.0.1",
+  "description": "Speech driven event trigger",
+  "main": "dist/speech-flow.min.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManRueda/speech-flow.git"
+  },
+  "author": "Manuel Rueda <manuel.rueda.un@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ManRueda/speech-flow/issues"
+  },
+  "homepage": "https://github.com/ManRueda/speech-flow#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-uglify": "^0.9.1"
+  }
+}

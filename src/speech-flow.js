@@ -53,10 +53,11 @@
       for (var i = 0; i < elements.length; i++){
         var elem = elements[i];
         var value = elem.attributes["speech-flow"].value;
-
+        /* jshint ignore:start */        
         this.on(value.split(':')[0], function(){
           window[value.split(':')[1]].call(elem);
         });
+        /* jshint ignore:end */
       }
       if (opts.autoStart)
         this.start();

@@ -11,6 +11,8 @@ Listen to a word or quote and the trigger all the callbacks.
 ## Documentation
 Speech-flow can be used by code or bootstrapping the DOM.
 
+There is two dist compilations, the first (```speech-flow.min.js```) it's the minified code , the second (```speech-flow.uni.min.js```) adds the PhenomenonJS's code inside to avoid to include it in you HTML.
+
 #### Constructor
 The constructor has this properties:
 * **lang:** Language code.
