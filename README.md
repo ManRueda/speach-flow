@@ -2,7 +2,7 @@
 
 Use the WebSpeach API with events.
 
-Listen to a work or quote and the trigger all the callbacks.
+Listen to a word or quote and the trigger all the callbacks.
 
 * Support jQuery and NodeJS syntax
 * Support RequireJS and Globals
@@ -45,7 +45,7 @@ The ```bootstrap``` method receive an object with this options.
 
 ```javascript
 speak = new SpeechFlow({
-  lang: "es-AR",
+  lang: "en-US",
   ignoreCase: true,
   ignoreDiacritics: true
 });
